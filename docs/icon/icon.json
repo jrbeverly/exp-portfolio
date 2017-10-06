@@ -1,12 +1,18 @@
 {
-    "name": "<name>",
+    "name": "Case",
     "license": "Public Domain",
-    "url": "<url>",
+    "url": "https://thenounproject.com/term/case/134358/",
     "author": {
-        "name": "<author>",
-        "url": "<author url>"
+        "name": "Kiryl Sytsko",
+        "url": "https://thenounproject.com/k.sytsko/"
     },
     "tags": [
-        "<tags>"
+        "Case",
+        "Archive",
+        "Briefcase",
+        "Business",
+        "Folder",
+        "Portfolio",
+        "Cary"
     ]
 }
