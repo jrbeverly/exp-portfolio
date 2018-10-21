@@ -6,9 +6,9 @@ DIR_ROOT="$(dirname $DIR)"
 DIR_SRC="${DIR_ROOT}/src"
 DIR_REF="${DIR_SRC}/ref"
 DIR_BRIEF="${DIR_SRC}/brief"
-DIR_TMP="${DIR_ROOT}/.artifacts/"
-DIR_ARTIFACTS="${DIR_ROOT}/dist/"
-DIR_ARTIFACTS_REF="${DIR_ARTIFACTS}/ref/"
+DIR_TMP="${DIR_ROOT}/.artifacts"
+DIR_ARTIFACTS="${DIR_ROOT}/dist"
+DIR_ARTIFACTS_REF="${DIR_ARTIFACTS}/ref"
 DIR_ARTIFACTS_BRIEF="${DIR_ARTIFACTS}/brief"
 DIR_ARTIFACTS_GIT="${DIR_ARTIFACTS}/tmp"
 
@@ -73,8 +73,9 @@ do
             sed -i "s,%REPOSITORY%,${dirname},g" index.html
             # sed -i "s@%BODY%@${contents}@g" index.html
             sed -i -e '/<!--BODY-->/r output.html' index.html
-        )
 
+            rm output.html
+            rm README.md
+        )
     )
-    exit
 done < "${FILE_REPO}"
