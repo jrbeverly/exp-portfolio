@@ -1,4 +1,8 @@
-## Documentation
-doc/**/images/
-# Documentation:
-docs/**/images/
+*.db
+bin/
+target/
+output/
+
+
+.artifacts/
+dist/
