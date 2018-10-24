@@ -6,7 +6,7 @@ DIR_ROOT="$(dirname $DIR)"
 DIR_SRC="${DIR_ROOT}/src"
 DIR_REF="${DIR_SRC}/ref"
 DIR_BRIEF="${DIR_SRC}/brief"
-DIR_INDEX="${DIR_SRC}/brief"
+DIR_INDEX="${DIR_SRC}/index"
 DIR_TMP="${DIR_ROOT}/.artifacts"
 DIR_ARTIFACTS="${DIR_ROOT}/dist"
 DIR_ARTIFACTS_REF="${DIR_ARTIFACTS}/ref"
@@ -28,7 +28,7 @@ rm $DIR_ARTIFACTS/brief.html
 while IFS="" read -r repo || [ -n "$repo" ]
 do
     (
-        repo_name="${repo%.*}" 
+        repo_name="${repo%.*}"
         dirname=$(echo ${repo_name} | awk -F/ '{print $NF}')
         echo "$dirname: Working with git repository"
 
@@ -43,13 +43,13 @@ do
             url="https://${git_url%.git}"
 
             ## References for projects
-            
+
             cp -r "${DIR_REF}/." .
             sed -i "s,%URL%,${url},g" index.html
             sed -i "s,%REPOSITORY%,${dirname},g" index.html
         )
 
-        
+
         (
             outDir="$DIR_ARTIFACTS_BRIEF/$dirname"
             mkdir -p "$outDir"
@@ -70,10 +70,10 @@ do
                 cp "docs/icon/icon.svg" "$outDir/images/icon.svg"
                 cp "README.md" "$outDir/README.md"
             )
-            
-            ## Briefs for projects           
-            cp -r "${DIR_BRIEF}/." . 
-            
+
+            ## Briefs for projects
+            cp -r "${DIR_BRIEF}/." .
+
             docker run -v $(pwd):/source jagregory/pandoc -f markdown -t html5 README.md -o output.html
 
             sed -i "s,%URL%,${url},g" index.html
@@ -82,12 +82,13 @@ do
 
             cp "${DIR_INDEX}/brief.html" brief.html
             sed -i "s,%REPOSITORY%,${dirname},g" brief.html
-            sed -i -e '/<!--BODY-->/r brief.html' "$DIR_ARTIFACTS_BRIEF/index.html"            
+            sed -i -e '/<!--BODY-->/r brief.html' "$DIR_ARTIFACTS/index.html"
 
             rm brief.html
             rm output.html
             rm README.md
         )
     )
-    exit 1
 done < "${FILE_REPO}"
+
+rm -rf ${DIR_TMP}
