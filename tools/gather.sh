@@ -64,7 +64,7 @@ do
             ## Get the properties from repository
             (
                 cd "$DIR_TMP"
-                git clone $repo
+                git clone $repo -b master
                 cd $dirname
 
                 cp "docs/icon/icon.svg" "$outDir/images/icon.svg"
