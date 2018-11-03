@@ -1,5 +1,4 @@
 git@gitlab.com:jrbeverlylabs/xunit-ext/xunit-metadata.git
-git@gitlab.com:jrbeverlylabs/xunit-ext/xunit-data.git
 git@gitlab.com:jrbeverlylabs/xplatformer/xplatformer-workspace.git
 git@gitlab.com:jrbeverlylabs/xplatformer/xsamples.git
 git@gitlab.com:jrbeverlylabs/xplatformer/xgamelib.git
@@ -7,7 +6,6 @@ git@gitlab.com:jrbeverlylabs/xplatformer/xplatformer.git
 git@gitlab.com:jrbeverlylabs/workspaces/boxstarter-scripts.git
 git@gitlab.com:jrbeverlylabs/workspaces/boxstarter-workspace.git
 git@gitlab.com:jrbeverlylabs/workspaces/packer-desktop.git
-git@gitlab.com:jrbeverlylabs/dockerfiles/docker-dind-bats.git
 git@gitlab.com:jrbeverlylabs/dockerfiles/docker-wkhtmltopdf.git
 git@gitlab.com:jrbeverlylabs/dockerfiles/docker-minify.git
 git@gitlab.com:jrbeverlylabs/dockerfiles/docker-optipng.git
@@ -24,21 +22,15 @@ git@gitlab.com:jrbeverlylabs/dockerfiles/docker-deluge.git
 git@gitlab.com:jrbeverlylabs/dockerfiles/docker-plex.git
 git@gitlab.com:jrbeverlylabs/workbench/localization-net.git
 git@gitlab.com:jrbeverlylabs/workbench/contentbundler.git
-git@gitlab.com:jrbeverlylabs/workbench/cqrs.git
 git@gitlab.com:jrbeverlylabs/workbench/entity-net.git
-git@gitlab.com:jrbeverlylabs/workbench/tictactoe-net.git
 git@gitlab.com:jrbeverlylabs/vagrant-desktop/vagrant-desktop.git
 git@gitlab.com:jrbeverlylabs/vagrant-desktop/vagrant-desktop-homelab.git
 git@gitlab.com:jrbeverlylabs/vagrant-desktop/vagrant-desktop-docker.git
 git@gitlab.com:jrbeverlylabs/vagrant-desktop/vagrant-desktop-opengl.git
 git@gitlab.com:jrbeverlylabs/vagrant-desktop/vagrant-desktop-x11.git
 git@gitlab.com:jrbeverlylabs/uwaterloo/jollybot.git
-git@gitlab.com:jrbeverlylabs/uwaterloo/mazes.git
-git@gitlab.com:jrbeverlylabs/uwaterloo/animator.git
-git@gitlab.com:jrbeverlylabs/uwaterloo/automata-net.git
 git@gitlab.com:jrbeverlylabs/uwaterloo/raytracer.git
 git@gitlab.com:jrbeverlylabs/uwaterloo/jcompiler.git
-git@gitlab.com:jrbeverlylabs/uwaterloo/shroud-net.git
 git@gitlab.com:jrbeverlylabs/uwaterloo/jotto.git
 git@gitlab.com:jrbeverlylabs/uwaterloo/distributedrpc.git
 git@gitlab.com:jrbeverlylabs/udacity/udacicards.git
@@ -50,7 +42,6 @@ git@gitlab.com:jrbeverlylabs/mirroring/mirroring.git
 git@gitlab.com:jrbeverlylabs/jrbeverly/jrbeverly-me.git
 git@gitlab.com:jrbeverlylabs/jrbeverly/portfolio.git
 git@gitlab.com:jrbeverlylabs/jrbeverly/circum-vitae.git
-git@gitlab.com:jrbeverlylabs/jrbeverly/resume.git
 git@gitlab.com:jrbeverlylabs/jrbeverly/profile.git
 git@gitlab.com:jrbeverlylabs/jrbeverly/tex-resume.git
 git@gitlab.com:jrbeverlylabs/jrbeverly/icons.git

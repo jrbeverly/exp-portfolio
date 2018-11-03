@@ -79,6 +79,8 @@ do
             sed -i "s,%URL%,${url},g" index.html
             sed -i "s,%REPOSITORY%,${dirname},g" index.html
             sed -i -e '/<!--BODY-->/r output.html' index.html
+            sed -i "s,<h2 id=\"description\">,<h2 id=\"details\">,g" index.html
+            
 
             cp "${DIR_INDEX}/brief.html" brief.html
             sed -i "s,%REPOSITORY%,${dirname},g" brief.html
@@ -89,6 +91,8 @@ do
             rm README.md
         )
     )
+
+    sleep 5
 done < "${FILE_REPO}"
 
 rm -rf ${DIR_TMP}
