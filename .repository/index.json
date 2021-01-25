@@ -1,0 +1,23 @@
+{
+  "slug": "portfolio",
+  "namespace": "jrbeverly",
+  "status": "archived",
+  "icon": "icon.svg",
+  "license": {
+    "type": "MIT",
+    "content": "Jonathan Beverly <jrbeverly>"
+  },
+  "topics": [
+    "html",
+    "static-site",
+    "personal-site",
+    "redirect-page",
+    "outline",
+    "portfolio-management"
+  ],
+  "languages": [
+    "Dockerfile",
+    "HTML",
+    "Shell"
+  ]
+}
