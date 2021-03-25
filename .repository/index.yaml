@@ -1,0 +1,19 @@
+slug: portfolio
+description: Collections data from a specified list of gitlab projects, then converts them into static HTML briefs.
+project: jrbeverly
+namespace: archive
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2017
+topics: |-
+  [
+    "html",
+    "static-site",
+    "personal-site",
+    "redirect-page",
+    "outline",
+    "portfolio-management"
+  ]
